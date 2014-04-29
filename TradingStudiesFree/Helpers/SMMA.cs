@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using NinjaTrader.Data;
 using NinjaTrader.Gui.Chart;
 
 namespace NinjaTrader.Indicator
@@ -49,7 +50,7 @@ namespace NinjaTrader.Indicator
 		#region Properties
 
 		[Description("Numbers of bars used for calculations")]
-		[Category("Parameters")]
+		[GridCategory("Parameters")]
 		public int Period
 		{
 			get { return period; }
