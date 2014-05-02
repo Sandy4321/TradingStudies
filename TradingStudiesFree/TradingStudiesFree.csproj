@@ -53,6 +53,9 @@
     <Compile Include="..\NTBase\Indicator\%40ATR.cs">
       <Link>NT Base Indicators\%40ATR.cs</Link>
     </Compile>
+    <Compile Include="..\NTBase\Indicator\%40CCI.cs">
+      <Link>NT Base Indicators\%40CCI.cs</Link>
+    </Compile>
     <Compile Include="..\NTBase\Indicator\%40CMO.cs">
       <Link>NT Base Indicators\%40CMO.cs</Link>
     </Compile>
@@ -65,6 +68,9 @@
     <Compile Include="..\NTBase\Indicator\%40Indicator.cs">
       <Link>NT Base\%40Indicator.cs</Link>
     </Compile>
+    <Compile Include="..\NTBase\Indicator\%40LinReg.cs">
+      <Link>NT Base Indicators\%40LinReg.cs</Link>
+    </Compile>
     <Compile Include="..\NTBase\Indicator\%40MACD.cs">
       <Link>NT Base Indicators\%40MACD.cs</Link>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="..\NTBase\Indicator\%40MIN.cs">
       <Link>NT Base Indicators\%40MIN.cs</Link>
+    </Compile>
+    <Compile Include="..\NTBase\Indicator\%40ROC.cs">
+      <Link>NT Base Indicators\%40ROC.cs</Link>
+    </Compile>
+    <Compile Include="..\NTBase\Indicator\%40RSI.cs">
+      <Link>NT Base Indicators\%40RSI.cs</Link>
     </Compile>
     <Compile Include="..\NTBase\Indicator\%40SMA.cs">
       <Link>NT Base Indicators\%40SMA.cs</Link>
@@ -91,6 +103,9 @@
     </Compile>
     <Compile Include="..\NTBase\Indicator\%40VMA.cs">
       <Link>NT Base Indicators\%40VMA.cs</Link>
+    </Compile>
+    <Compile Include="..\NTBase\Indicator\%40VOLMA.cs">
+      <Link>NT Base Indicators\%40VOLMA.cs</Link>
     </Compile>
     <Compile Include="..\NTBase\Indicator\%40VWMA.cs">
       <Link>NT Base Indicators\%40VWMA.cs</Link>
@@ -116,6 +131,12 @@
     <Compile Include="Indicators\anaMovingMedian.cs" />
     <Compile Include="Indicators\anaSuperTrendM1.cs" />
     <Compile Include="Indicators\ATROffsetDot.cs" />
+    <Compile Include="Indicators\BF.cs" />
+    <Compile Include="Indicators\CCi_Histogram.cs" />
+    <Compile Include="Indicators\ChandesTrendScore.cs" />
+    <Compile Include="Indicators\ColorTimeRegions.cs" />
+    <Compile Include="Indicators\csInd.cs" />
+    <Compile Include="Indicators\DamianiVolatmeter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Indicators\TSSuperTrend.cs" />
   </ItemGroup>
