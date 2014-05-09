@@ -49,7 +49,6 @@ namespace NinjaTrader.Indicator
 		{
 			Add(new Plot(new Pen(Color.FromKnownColor(KnownColor.Green), 2), PlotStyle.Line, "BStop"));
 			Add(new Plot(new Pen(Color.FromKnownColor(KnownColor.Blue), 2), PlotStyle.Line, "SStop"));
-			CalculateOnBarClose = true;
 			Overlay = true;
 			PriceTypeSupported = false;
 			BarsRequired = 0;
@@ -68,7 +67,7 @@ namespace NinjaTrader.Indicator
 				return;
 			}
 
-			else if (WaveCount() == 0) //update variables unitl first peak or trough is formed
+			if (WaveCount() == 0) //update variables unitl first peak or trough is formed
 			{
 				if (Comp(High[0], pk) >= 0) ResetPK(); // new high
 				else if (Comp(Low[0], tr) <= 0) ResetTR(); // new low
@@ -87,11 +86,11 @@ namespace NinjaTrader.Indicator
 						if (midBar.Count > 1)
 						{
 							int xMid = CurrentBar - (int)midBar[0];
-							DrawDot("Mid" + CurrentBar.ToString(), true, xMid, (double)midPoint[0], Color.Gold);
+							DrawDot("Mid" + CurrentBar, true, xMid, (double)midPoint[0], Color.Gold);
 						}
 					}
 					int xPeak = CurrentBar - pkBar;
-					DrawDot("Peak" + pkBar.ToString(), true, xPeak, (double)peak[0], Color.Green);
+					DrawDot("Peak" + pkBar, true, xPeak, (double)peak[0], Color.Green);
 					swing = -1;
 				}
 				ResetTR();
@@ -111,7 +110,7 @@ namespace NinjaTrader.Indicator
 						if (midBar.Count > 1)
 						{
 							int xMid = CurrentBar - (int)midBar[0];
-							DrawDot("Mid" + CurrentBar.ToString(), true, xMid, (double)midPoint[0], Color.Gold);
+							DrawDot("Mid" + CurrentBar, true, xMid, (double)midPoint[0], Color.Gold);
 						}
 					}
 					int xTrough = CurrentBar - trBar;
